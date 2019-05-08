@@ -24,3 +24,11 @@ cargo build --release
 ```
 ./target/release/plasma-chamber 
 ```
+
+## Development
+
+Run all tests.
+
+```
+cargo test --all
+```
