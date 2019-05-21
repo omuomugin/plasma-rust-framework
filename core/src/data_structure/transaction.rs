@@ -18,6 +18,14 @@ impl Transaction {
             transaction_witness: transaction_witness.to_vec(),
         }
     }
+
+    pub fn get_state_update(&self) -> &StateUpdate {
+        &self.state_update
+    }
+
+    pub fn get_transaction_witness(&self) -> &Vec<u8> {
+        &self.transaction_witness
+    }
 }
 
 impl Encodable for Transaction {
